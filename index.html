@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+        <title>Encriptador de texto</title>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <img class="logo" src="imagenes/Logo.svg" alt="logo">
+        </header>
+
+        <div class="container">
+
+            <div class="encriptar">
+                <textarea id="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            </div>
+            <div class="terminos">
+                <img src="imagenes/alerta.svg" alt="alerta">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        
+        </div>
+
+        <div class="container2">
+
+            <img src="imagenes/Muñeco.svg" alt="muneco">
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <h2 id="titulo-encriptado">Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>                
+            
+            <button class="btn-copiar" type="button" onclick="copiar()">Copiar</button>
+
+        </div>
+    
+        <script src="script.js"></script>
+    
+        <footer>
+            <p>Program created by error404linares © 2024. Oracle Next Education. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+        </footer>
+
+    </body>
+
+</html>
